@@ -1,0 +1,34 @@
+{
+  "alert": false,
+  "from": "TCPinger - TCP Health Monitor",
+  "to": "TCPinger@gmail.com",
+  "sendmail": {
+    "host": "gmail.com",
+    "port": 465,
+    "secure": true,
+    "auth": {
+      "user": "tcpinger",
+      "pass": "p@ssw0rd!"
+    }
+  },
+  "checks": [
+    {
+      "name": "localhost",
+      "address": "localhost",
+      "ports": [22,80],
+      "attempts": 5,
+      "timeout": 1000,
+      "frequency": 10,
+      "alert": false
+    },
+    {
+      "name": "Google",
+      "address": "www.google.com",
+      "ports": [80, 443],
+      "attempts": 5,
+      "timeout": 1000,
+      "frequency": 60,
+      "alert": false
+    }
+  ]
+}
