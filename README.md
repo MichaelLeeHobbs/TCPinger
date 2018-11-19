@@ -1,11 +1,11 @@
 # TCPinger
 TCP Health Monitor
 
-TCPinger is a highly configurable TCP Health monitor. It effectively pings multiple TCP endpoints on a defined interval and will optionally send an email alert if after 
+TCPinger is a highly configurable TCP Health monitor. It effectively pings multiple TCP endpoints on a defined interval and will optionally send an email alert after 
 5 consecutive failures.
 
 ## Usage
- 1. Download the version appropriate for your OS from [releases][https://github.com/MichaelLeeHobbs/TCPinger/releases]
+ 1. Download the version appropriate for your OS from [releases](https://github.com/MichaelLeeHobbs/TCPinger/releases)
  2. Assuming you rename it to tcpinger or tcpinger.exe
  3. On first run TCPinger will generate the healthChecks.json
  4. The healthChecks.json file is made up of three sections - see below
@@ -19,7 +19,7 @@ TCPinger is a highly configurable TCP Health monitor. It effectively pings multi
  * to: john.doe@gmail.com - The email address to send alerts to
  
  #### sendmail
- * TCPinder uses [nodemailer.com][https://nodemailer.com/] to send emails. The sendmail object will be passed to nodemailer.createTransport thus all Nodemailer options are supported. See: [SMTP transport][https://nodemailer.com/smtp/]
+ * TCPinder uses [nodemailer.com](https://nodemailer.com/) to send emails. The sendmail object will be passed to nodemailer.createTransport thus all Nodemailer options are supported. See: [SMTP transport](https://nodemailer.com/smtp/)
  * host - email server ip or address
  * port: 465 - email server port
  * secure: true - use secure?
